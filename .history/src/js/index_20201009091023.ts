@@ -45,6 +45,7 @@ new Vue({
     manipulateString() {
       console.log("Change case for the text");
       if (this.selected == "Upper Case") {
+        console.log(this.Input);
         this.content = this.input.toUpperCase();
       } else if (this.selected == "Lower Case") {
         this.content = this.input.toLowerCase();

@@ -18,21 +18,19 @@
   </head>
 
   <body>
-    <div id="app">
-      <h1>String Manipulator</h1>
-      <input id="TekstInput" v-model="input" />
-      <select id="Selector" v-model="selected">
-        <option value="Upper Case">Upper Case</option>
-        <option value="Lower Case">Lower Case</option>
-      </select>
-      <button id="Manipulate" @click="manipulateString">
-        Manipulate this shit
-      </button>
+    <h1>String Manipulator</h1>
+    <input id="TekstInput" v-model="input" />
+    <select id="Selector" v-model="selected">
+      <option>Upper Case</option>
+      <option>Lower Case</option>
+    </select>
+    <button id="Manipulate" @click="manipulateString">
+      Manipulate this shit
+    </button>
 
-      <!-- <div id="content" v-model="content"> -->
-      <div>{{content}}</div>
-      <!-- </div> -->
-    </div>
+    <!-- <div id="content" v-model="content"> -->
+    <div>{{content}}</div>
+    <!-- </div> -->
 
     <script src="bundle.js"></script>
   </body>
